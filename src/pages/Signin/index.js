@@ -4,7 +4,7 @@ import Button from "../../components/Button";
 import * as C from "./styles";
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
-
+import logoWiki from "../../image/logo_wiki.png"
 const Signin = () => {
   const { signin } = useAuth();
   const navigate = useNavigate();
@@ -31,7 +31,8 @@ const Signin = () => {
 
   return (
     <C.Container>
-      <C.Label>SISTEMA DE LOGIN</C.Label>
+       <img src={logoWiki} alt="Logo" width="300" height="100" />
+      <C.Label>SISTEMA OTDR</C.Label>
       <C.Content>
         <Input
           type="email"
